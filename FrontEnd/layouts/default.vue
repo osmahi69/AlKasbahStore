@@ -19,8 +19,6 @@ import VmRegistrationModal from '@/components/modal/Registration';
 import VmCheckoutModal from '@/components/modal/Checkout';
 
 export default {
-  props: {
-  },
   components: {
     VmHeader,
     VmFooter,
@@ -60,12 +58,14 @@ body {
     text-align: center;
     line-height: 60px;
   }
+
   .el-aside {
     background-color: #D3DCE6;
     color: #333;
     text-align: center;
     line-height: 200px;
   }
+
   .el-main {
     background-color: #E9EEF3;
     color: #333;
