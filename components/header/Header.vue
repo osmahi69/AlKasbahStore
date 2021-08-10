@@ -2,8 +2,11 @@
   <div>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <nuxt-link :to="{ name: 'index' }" class="navbar-item">
-          <h1 class="title is-6 is-flex-mobile">LAKASBAH CHICHA</h1>
+        <nuxt-link :to="{ name: 'index' }" class="navbar-it">
+          <div class="flex">
+           <img src="../../static/logo.png" class="img">
+          <h1 class="title">LAKASBAH CHICHA</h1>
+          </div>
         </nuxt-link>
 
         <a role="button" class="navbar-burger burger" @click="isMenuOpen = !isMenuOpen" aria-label="menu" aria-expanded="false">
@@ -96,15 +99,30 @@
 
 <style lang="scss" scoped>
 .navbar {
-  background-color:grey;
+  background-color: whitesmoke;
+  margin: 0px;
 }
   .title {
-  color:rgb(14, 13, 13);
+   font-size: 12px;
+    color: #3B3935;
+    margin-bottom: 7px;
+    line-height: 1.2;
+    margin: 10px;
   }
   .shopping-cart {
     cursor: pointer;
   }
   a {
     color: grey;
+  }
+.img {
+  border-radius: 50%;
+  width: 30px;
+  height: auto;
+ margin: 2px;
+  }
+  .flex {
+    display: flex;
+    margin-top: 15px;
   }
 </style>
